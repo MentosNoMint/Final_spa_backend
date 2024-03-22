@@ -31,20 +31,13 @@ form_booking.addEventListener('submit', async (e) => {
 
     console.log(passengers, flight_back, flight_from)
 
-
-
     let contentBooking = await fetch('http://127.0.0.1:8000/api/booking', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ flight_from, flight_back, passengers })
     })
-        let resBooking = await contentBooking.json();
-
-        localStorage.setItem('code' , resBooking.data.code);
-
-
-
-    
+    let resBooking = await contentBooking.json();
+    localStorage.setItem('code' , resBooking.data.code);
 })
 
 

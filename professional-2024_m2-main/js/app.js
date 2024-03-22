@@ -30,11 +30,6 @@ searhForm.addEventListener('submit', async (e) => {
 
     const formData = new FormData(searhForm);
 
-
-
-
-
-
     let from = formData.get('from')
     let to = formData.get('to-where')
     let departing = formData.get('departing')

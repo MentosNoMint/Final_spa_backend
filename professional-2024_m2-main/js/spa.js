@@ -12,10 +12,7 @@ function replaceWindow(open) {
         document.getElementById(open).style.display = 'flex'
     }
 
-    if (currentPage === 'profile') {
-        localStorage.removeItem('objFrom');
-        localStorage.removeItem('objBack');
-    }
+
 }
 
 

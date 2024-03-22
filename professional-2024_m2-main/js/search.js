@@ -4,6 +4,7 @@ let backTolist = document.querySelector('.backTo')
 let fromTolist = document.querySelector('.fromTo')
 let SelectTolist = document.querySelector('.SelectPlace')
 let formBooking = document.querySelector('#form-booking')
+
 formBooking.addEventListener('submit', async (e) => {
     e.preventDefault();
 })
